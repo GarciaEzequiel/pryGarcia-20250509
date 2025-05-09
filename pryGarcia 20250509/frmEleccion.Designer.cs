@@ -39,7 +39,7 @@
             this.cmbHeroe.FormattingEnabled = true;
             this.cmbHeroe.Location = new System.Drawing.Point(30, 51);
             this.cmbHeroe.Name = "cmbHeroe";
-            this.cmbHeroe.Size = new System.Drawing.Size(121, 21);
+            this.cmbHeroe.Size = new System.Drawing.Size(296, 21);
             this.cmbHeroe.TabIndex = 0;
             this.cmbHeroe.SelectedIndexChanged += new System.EventHandler(this.cmbHeroe_SelectedIndexChanged);
             // 
@@ -47,7 +47,8 @@
             // 
             this.pcbImagen.Location = new System.Drawing.Point(30, 103);
             this.pcbImagen.Name = "pcbImagen";
-            this.pcbImagen.Size = new System.Drawing.Size(100, 50);
+            this.pcbImagen.Size = new System.Drawing.Size(296, 249);
+            this.pcbImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbImagen.TabIndex = 1;
             this.pcbImagen.TabStop = false;
             // 
@@ -64,7 +65,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(219, 224);
+            this.ClientSize = new System.Drawing.Size(438, 439);
             this.Controls.Add(this.lblHeroe);
             this.Controls.Add(this.pcbImagen);
             this.Controls.Add(this.cmbHeroe);

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using pryGarcia_20250509.Properties;
 
 namespace pryGarcia_20250509
 {
@@ -19,7 +20,22 @@ namespace pryGarcia_20250509
 
         private void cmbHeroe_SelectedIndexChanged(object sender, EventArgs e)
         {
+            string eleccion = cmbHeroe.Text as string;
 
+            switch (eleccion)
+            {
+                case "Superman":
+                    pcbImagen.Image = Resources.Superman;
+                break;
+                
+                case "Batman":
+                    pcbImagen.Image = Resources.Batman;
+                break;
+                
+                case "Iron Man":
+                    pcbImagen.Image = Resources.Iron_Man;
+                break;
+            }
         }
 
         private void frmEleccion_Load(object sender, EventArgs e)
